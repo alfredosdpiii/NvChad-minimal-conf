@@ -1,5 +1,13 @@
 local plugins = {
   {
+    'iruzo/matrix-nvim',
+    lazy=false,
+    priority=1000,
+    config = function()
+      vim.cmd([[colorscheme matrix]])
+    end,
+  },
+  {
     "rcarriga/nvim-dap-ui",
     event = "VeryLazy",
     dependencies = "mfussenegger/nvim-dap",
